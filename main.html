@@ -21,9 +21,10 @@
 <br>
         <label for="cars">car Brands</label>
         <select name="" id="cars" required>
-            <option value="">BMW</option>
-            <option value="">Audi</option>
-            <option value="">Mercedez</option>
+			<option disabled selected>--Please choose an option--</option> 
+            <option value="bmw">BMW</option>
+            <option value="audi">Audi</option>
+            <option value="mercedez">Mercedez</option>
 <br>
         </select>
         <label for="age">Age*</label>
@@ -33,14 +34,14 @@
         <input type="date" id="dob" required>
 <br>
         <label for="tel">Phone Number</label>
-        <input type="tel" id="tel">
+        <input type="tel" id="tel" placeholder="xxx-xxx-xxxx">
 <br>
         <label for="password">Password</label>
         <input type="password" id=password placeholder="Password" required>
 <br>
-        <label for="checkbox" id="tos">Checkbox*</label>
-        <input type="checkbox" required><br>
+<!--         <label for="checkbox" id="tos">Checkbox*</label> -->
         <label for="tos">I agree to the TOS</label>
+        <input type="checkbox" required id="tos"><br>
         <button type="submit">submit</button>
 <br>
     </form>
